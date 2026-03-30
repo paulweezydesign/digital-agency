@@ -12,6 +12,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
+import { ThemeToggle } from "@/components/custom/theme-toggle";
 
 export function TopBar() {
   return (
@@ -19,6 +20,7 @@ export function TopBar() {
       <SidebarTrigger />
       <Separator orientation="vertical" className="h-6" />
       <div className="flex-1" />
+      <ThemeToggle />
       <DropdownMenu>
         <DropdownMenuTrigger
           render={<Button variant="ghost" className="relative h-8 w-8 rounded-full" />}
